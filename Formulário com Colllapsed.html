@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<table align="center">
+    <tr>
+        <td>
+            <div class="container">
+                <h3 style="color:#0782C1;">Solicitação Cartão Bemol</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel"> 
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a id="collapseBt1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color:#0782C1;">Dados Pessoais</a>
+                            </h4>
+                        </div>
+                    
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label" >NOME</label><i class="bar"></i>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">E-MAIL</label><i class="bar"></i>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">CPF</label><i class="bar"></i>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">RG</label><i class="bar"></i>
+                                </div>
+                                <table border="0px" style="width: 100%; margin-top: -20px; margin-bottom: -20px" >
+                                    <tr>
+                                        <td cellpadding = 2 style="padding: 2px;">
+                                            <div class="form-group">
+                                                <input type="text" required="required"/>
+                                                <label for="input" class="control-label">DATA DE EMISSÃO</label><i class="bar"></i>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 2px;">
+                                            <div class="form-group">
+                                                <input type="text" required="required"/>
+                                                <label for="input" class="control-label">ESTADO DE EMISSÃO</label><i class="bar"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">DATA DE NASCIMENTO</label><i class="bar"></i>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">TELEFONE CELULAR</label><i class="bar"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">NOME DA MÃE</label><i class="bar"></i>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in"></div>
+                                <div class="button-container">
+                                    <button type="button" class="buttonSubmit" data-toggle="collapse" href="collapse3" onclick="fechar1()" style="width: 100%"><span>Avançar</span></button>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in"></div>
+                            </div>    
+                        </div>
+                        
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a id="collapseBt2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color:#0782C1;">Endereço</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">DATA DE NASCIMENTO</label><i class="bar"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">TELEFONE CELULAR</label><i class="bar"></i>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="buttonSubmit" data-toggle="collapse" href="collapse3" onclick="fechar2()" style="width: 100%"><span>Avançar</span></button>
+                            </div>
+                        </div>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a id="collapseBt3" data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color:#0782C1;">Documentos</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h5 style="color: #6F6F6F">1) FOTO DE ROSTO</h5>
+                                <p style="font-size: 10px; color: #6F6F6F"><b>Instruções: </b> Tire uma foro de seu rosto e certifique-se que o mesmo
+                                está bem visivel, para que seja facilmente identificado.
+                                </p>
+                                <button class="buttonSubmit">CARREGAR IMAGEM</button>
+                                <div>
+                                    <h5 style="color: #6F6F6F">2) IDENTIDADE OU CNH</h5>
+                                    <p style="font-size: 10px; color: #6F6F6F"><b>Instruções: </b> Em um ambiente bem iluminado, tire uma foto da frente
+                                    e verso de seu documento. Confira se todas as informações estão nitidas e legíveis.</p>
+                                    <table  style="width: 100%;">
+                                        <tr>
+                                            <td style="border: 1px; border-color: #0782C1;">
+                                                <button class="buttonSubmit">CARREGAR FRENTE</button>
+                                            </td>
+                                            <td>
+                                                <button class="buttonSubmit">CARREGAR VERSO</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="button-container">
+                    <button type="button" class="button" style="width: 100%"><span>ENVIAR SOLICITAÇÃO</span></button>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+<script>
+    function fechar1(){
+        document.getElementById("collapseBt2").click();
+    }
+
+    function fechar2(){
+        document.getElementById("collapseBt3").click();
+    }
+
+</script>
+
+</html>
+
